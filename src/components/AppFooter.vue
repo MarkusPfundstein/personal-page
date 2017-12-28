@@ -1,21 +1,22 @@
 <template>
   <div class="app-footer container">
-    <div class="bottomtxt">
-      &copy; LIFE Electronics
-    </div>
-    <div class="iconsright">
-      <a href="mailto:mpfundstein@protonmail.com" target="_blank">
-        <img class="icon-social-email" src="../assets/mail.svg"/>
-      </a>
-      <a href="https://www.linkedin.com/in/mpfundstein/" target="_blank">
-        <img class="icon-social-linkedin" src="../assets/black-linkedin-icon.png"/>
-      </a>
-      <a href="https://twitter.com/lmf4lol" target="_blank">
-        <img class="icon-social-twitter" src="../assets/twitter.png"/>
-      </a>
-      <a href="https://github.com/MarkusPfundstein" target="_blank">
-        <img class="icon-social-github" src="../assets/GitHub-Mark-64px.png"/>
-      </a>
+    <div class="bottom-container">
+      <div class="bottomtxt">
+        &copy; LIFE Electronics
+      </div>
+      <div class="iconsright">
+        <a href="mailto:mpfundstein@protonmail.com" target="_blank">
+          <img class="icon-social-email" src="../assets/mail.svg"/>
+        </a>
+        <a href="https://www.linkedin.com/in/mpfundstein/" target="_blank">
+          <img class="icon-social-linkedin" src="../assets/black-linkedin-icon.png"/>
+        </a>
+        <a href="https://twitter.com/lmf4lol" target="_blank"> <img class="icon-social-twitter" src="../assets/twitter.png"/>
+        </a>
+        <a href="https://github.com/MarkusPfundstein" target="_blank">
+          <img class="icon-social-github" src="../assets/GitHub-Mark-64px.png"/>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -60,9 +61,19 @@ export default {
   height: auto;
 }
 
+.bottom-container {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .app-footer {
   background-color: #eac67a;
-  height:48px;
+  position: relative;
+  bottom: 0;
+  height:50px;
+  width: 100%;
+  box-shadow: 0px 500px 0px 500px #eac67a;
 }
 
 .iconsright {
@@ -72,7 +83,6 @@ export default {
 
 .bottomtxt {
   margin-top: 15px;
-  margin-left: 5px;
   float: left;
 }
 

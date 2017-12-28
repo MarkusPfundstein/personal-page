@@ -5,11 +5,19 @@ import App from './App';
 import router from './router';
 import AppHeader from './components/AppHeader';
 import AppFooter from './components/AppFooter';
+import DigitalVideo from './components/DigitalVideo';
+import AboutMe from './components/AboutMe';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 Vue.config.productionTip = false;
 
 Vue.component('app-header', AppHeader);
 Vue.component('app-footer', AppFooter);
+Vue.component('about-me', AboutMe);
+Vue.component('digital-video', DigitalVideo);
+Vue.component('projects', Projects);
+Vue.component('contact', Contact);
 
 /* eslint-disable no-new */
 new Vue({

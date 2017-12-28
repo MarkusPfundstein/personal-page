@@ -1,7 +1,16 @@
 <template>
   <div id="app">
     <app-header/>
-    <router-view/>
+      <!--    <router-view/>-->
+    <about-me/>
+    <div class="page-separator"></div>
+    <projects/>
+    <div class="page-separator"></div>
+    <digital-video/>
+    <div class="page-separator"></div>
+    <contact/>
+    <div class="page-separator"></div>
+    <div class="page-separator"></div>
     <app-footer/>
   </div>
 </template>
@@ -14,18 +23,47 @@ export default {
 </script>
 
 <style>
+
+.page-separator {
+  height: 15px;
+}
+
+body {
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+}
+
+html {
+  overflow-y: scroll;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-left:auto;
-  margin-right:auto;
-  max-width:850px;
+}
+
+.content-title {
+  color: #984b43;
+  font-weight: normal;
+}
+
+.content-subtitle {
+  color: #984b43;
+  font-weight: normal;
+}
+
+.content {
+  max-width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 .container {
-  max-width:850px;
-  margin-left:1em;
 }
 
 .col-1,.col-12,.col-2,.col-3,.col-4,.col-6,.col-8,.{

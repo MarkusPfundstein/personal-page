@@ -1,15 +1,19 @@
 <template>
-  <div class="app-header container">
-    <header>
-      <h1 class="bit2theright">MarkusPfundstein.Com</h1>
-      <span class="bit2theright">
-        <a href="/">Home</a>
-        <a href="/#/aboutme">About Me</a>
-        <a href="/#/video">Digital Video</a>
-        <a href="/#/software">Software Development</a>
-        <a href="/#/blog">Blog</a>
-      </span>
-    </header>
+  <div class="app-header-dummy">
+    <div class="app-header container">
+      <header class="headerstyle">
+        <h1 class="page-logo">markuspfundstein.com</h1>
+        <div class="links-right-side">
+        <span>
+          <a href="#about-me">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#digital-video">Digital Video</a>
+          <a href="#contact">Contact</a>
+        </span>
+        </div>
+      </header>
+      
+    </div>
   </div>
 </template>
 
@@ -26,12 +30,35 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.bit2theright {
-  margin-left: 5px;
+.links-right-side {
+  margin-top: 7px;
+  float: right;
+}
+
+.page-logo {
+  float: left;
+}
+
+.app-header-dummy {
+  height: 35px;
+}
+
+.headerstyle{
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app-header {
+  height: 35px;
+  box-shadow: 0px 0px 1px #18121e;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background-color: #eac67a;
 }
 
 header {
-  background-color: #eac67a;
 }
 
 a {

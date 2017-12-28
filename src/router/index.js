@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import HelloWorld from '@/components/HelloWorld';
 import AboutMe from '@/components/AboutMe';
+import DigitalVideo from '@/components/DigitalVideo';
 
 Vue.use(Router);
 
@@ -17,5 +18,11 @@ export default new Router({
       name: 'AboutMe',
       component: AboutMe,
     },
+    {
+      path: '/video',
+      name: 'DigitalVideo',
+      component: DigitalVideo,
+    },
+
   ],
 });
