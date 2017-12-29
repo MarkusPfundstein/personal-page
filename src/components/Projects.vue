@@ -8,7 +8,7 @@
       </div>
       <div class="project-right-side">
         <div class="project-text-container">
-          <p>
+          <p class="project-text">
           Since 2016 , I am performing an integral role at the Internet of Things startup Triggi. Often described as the 'meijse for everything', I've worked on the backend system and the app, bootstrapped the analytics system for marketing, served as Scrum Master, and ran several online marketing campaigns with above-average conversion rates.<br>
           The backend is micro-service system built with NodeJS, RabbitMQ, MongoDB, Reddis, Ansible, Consule and several other cutting-edge technologies. The front-end is build with Cordova and deployed on Android and iOS.
           </p>
@@ -23,7 +23,7 @@
       </div>
       <div class="project-right-side">
         <div class="project-text-container">
-          <p>
+          <p class="project-text">
           For ESOMAR, I've developed in cooperation with my friends from <a href="https://www.eli5.io" target="_blank">Eli5</a> an advanced search engine for all of their content (video, paper, scans). Besides hacking, I've acted as Product Owner. The project started as prototype and quickly became a strategic component of ESOMARs digital transformation.<br>
           To make this happen, we used Elastic Search, NodeJS, Vue, Python (Scikit and sklearn) and PHP. We deploy everything using Docker and Gitlab through a fully automated CI/CD pipeline.
           </p>
@@ -38,7 +38,7 @@
       </div>
       <div class="project-right-side">
         <div class="project-text-container">
-          <p>
+          <p class="project-text">
           During my tenure at ODMedia, I worked mostly on automation systems for their digital video pipelines. Jobs included XML transformation engines for ADI 2.0 files, cloud encoding for video delivery and the development of cutting-edge software (Interoperable Master Format).<br>
           The software we used there has been quite diverse. From ffmpeg, to avisynth, to ffmbc, to obe-rt, to Baton, to Iris. If it had to do video, we used it.
           </p>
@@ -64,7 +64,7 @@ export default {
 
 .project-image-container {
   float: left;
-  width: 50%;
+  width: 45%;
 }
 
 .project-text-container {
@@ -72,6 +72,7 @@ export default {
 }
 
 .project-image {
+  margin-top: 5px;
   margin-left: 25px;
   max-width: 100%;
   max-height: 300px;
@@ -81,7 +82,7 @@ export default {
 }
 
 .project-right-side { 
-  width: 50%;
+  width: 45%;
   float: right;
 }
 
@@ -92,11 +93,36 @@ export default {
   overflow: auto;
 }
 
+.project-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .clear {
   clear: both;
 }
 
+
 .separator {
   height: 25px;
+}
+
+
+@media (max-width: 800px) {
+
+  .project-image-container {
+    float: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+
+  .project-right-side {
+    float: left;
+    width: 100%;
+  }
+
 }
 </style>
