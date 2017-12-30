@@ -2,8 +2,10 @@
   <div class="app-header-dummy">
     <div class="app-header container">
       <header class="headerstyle">
-        <h1 class="page-logo">markuspfundstein.com</h1>
-        <h1 class="page-logo-small">m/p</h1>
+        <a href="#app-header-anchor-top">
+          <h1 class="page-logo-small">m/p</h1>
+          <h1 class="page-logo">markuspfundstein.com</h1>
+        </a>
         <div class="overflow-menu-right">
           <img class="overflow-menu-icon" src="../assets/overflow.png"/>
         </div>

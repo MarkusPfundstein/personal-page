@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div id="app-header-anchor-top"></div>
     <app-header/>
       <!--    <router-view/>-->
       <front/>
