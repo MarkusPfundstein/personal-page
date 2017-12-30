@@ -4,7 +4,9 @@
     <p>Some selected projects that I have worked on. Some hired me as a consultant, others employed me.</p>
     <div class="project-container">
       <div class="project-image-container">
-        <img class="project-image" src="../assets/triggi-screen.png"/>
+        <a href = "https://www.triggi.com" target="_blank">
+          <img class="project-image" src="../assets/triggi-screen.png"/>
+        </a>
       </div>
       <div class="project-right-side">
         <div class="project-text-container">
@@ -19,7 +21,9 @@
     <div class="separator"></div>    
     <div class="project-container">
       <div class="project-image-container">
-        <img class="project-image" src="../assets/esomar-screen.png"/>
+        <a href="https://ana.esomar.org" target="_blank">
+          <img class="project-image" src="../assets/esomar-screen.png"/>
+        </a>
       </div>
       <div class="project-right-side">
         <div class="project-text-container">
@@ -34,7 +38,9 @@
     <div class="separator"></div>    
     <div class="project-container">
       <div class="project-image-container">
-        <img class="project-image" src="../assets/odmedia-screen.png"/>
+        <a href="http://www.odmedia.nl" target="_blank">
+          <img class="project-image" src="../assets/odmedia-screen.png"/>
+        </a>
       </div>
       <div class="project-right-side">
         <div class="project-text-container">

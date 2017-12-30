@@ -17,6 +17,32 @@
 
 <script>
 
+function jqueryScrollInit() {
+  $(document).on('click', 'a[href^="#"]', function (e) {
+    // target element id
+    const id = $(this).attr('href');
+
+    // target element
+    const $id = $(id);
+    if ($id.length === 0) {
+      return;
+    }
+
+    // prevent standard hash navigation (avoid blinking in IE)
+    e.preventDefault();
+
+    // top position relative to the document
+    const pos = $id.offset().top;
+
+    // animated top scrolling
+    $('body, html').animate({
+      scrollTop: pos,
+    });
+  });
+}
+
+jqueryScrollInit();
+
 export default {
   name: 'app',
 };
@@ -51,6 +77,11 @@ html {
 }
 
 .content-subtitle {
+  color: #984b43;
+  font-weight: normal;
+}
+
+.content-sub-subtitle {
   color: #984b43;
   font-weight: normal;
 }

@@ -42,14 +42,14 @@ export default {
 
 .icon-social-linkedin{
   margin-right: 15px;
-  margin-bottom: 1.7px;
+  margin-bottom: 3.5px;
   width: 30px;
   height: auto;
 }
 
 .icon-social-twitter {
   margin-right: 12px;
-  margin-bottom: 1.5px;
+  margin-bottom: 3.5px;
   width: 32px;
   height: auto;
 }
@@ -57,6 +57,7 @@ export default {
 .icon-social-github {
   margin-top: 8px;
   margin-right: 10px;
+  margin-bottom: 3.2px;
   width: 30px;
   height: auto;
 }
@@ -77,7 +78,7 @@ export default {
 }
 
 .iconsright {
-  margin-top: 1px;
+  margin-top: 0px;
   float: right;
 }
 

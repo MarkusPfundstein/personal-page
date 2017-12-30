@@ -6,9 +6,9 @@
         <h1 class="page-logo-small">m/p</h1>
         <div class="links-right-side">
         <span>
-          <a href="#about-me">About Me</a>
+          <a href="#about-me">About</a>
           <a href="#projects">Projects</a>
-          <a href="#digital-video">Digital Video</a>
+          <a href="#digital-video">Services</a>
           <a href="#contact">Contact</a>
         </span>
         </div>
