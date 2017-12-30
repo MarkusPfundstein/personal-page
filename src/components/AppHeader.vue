@@ -4,6 +4,9 @@
       <header class="headerstyle">
         <h1 class="page-logo">markuspfundstein.com</h1>
         <h1 class="page-logo-small">m/p</h1>
+        <div class="overflow-menu-right">
+          <img class="overflow-menu-icon" src="../assets/overflow.png"/>
+        </div>
         <div class="links-right-side">
         <span>
           <a href="#about-me">About</a>
@@ -97,6 +100,10 @@ a:hover {
   float: right;
 }
 
+.overflow-menu-right {
+  display: none;
+}
+
 @media (max-width:840px) {
   .page-logo {
     display: none;
@@ -105,9 +112,21 @@ a:hover {
   .page-logo-small {
     display: inline;
   }
-  
+}
+
+@media (max-width:500px) {
   .links-right-side {
     display: none;
+  }
+
+  .overflow-menu-icon {
+    margin-top: 8px;
+    width: 22px;
+  }
+
+  .overflow-menu-right {
+    display: inline;
+    float: right;
   }
 }
 
