@@ -2,6 +2,7 @@
   <div id="app">
     <app-header/>
       <!--    <router-view/>-->
+      <front/>
     <about-me/>
     <div class="page-separator"></div>
     <projects/>

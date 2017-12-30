@@ -9,6 +9,7 @@ import DigitalVideo from './components/DigitalVideo';
 import AboutMe from './components/AboutMe';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Front from './components/Front';
 
 Vue.config.productionTip = false;
 
@@ -18,6 +19,7 @@ Vue.component('about-me', AboutMe);
 Vue.component('digital-video', DigitalVideo);
 Vue.component('projects', Projects);
 Vue.component('contact', Contact);
+Vue.component('front', Front);
 
 /* eslint-disable no-new */
 new Vue({
