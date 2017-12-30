@@ -45,6 +45,7 @@ export default {
 }
 
 .app-header {
+  z-index: 9999;
   height: 35px;
   box-shadow: 0px 0px 1px #18121e;
   top: 0;
