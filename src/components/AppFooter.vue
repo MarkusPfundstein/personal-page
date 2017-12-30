@@ -102,6 +102,7 @@ export default {
   }
 
   .iconsright {
+    padding-left: 5px;
     width: 100%;
     margin: 0 auto;
     float: none;

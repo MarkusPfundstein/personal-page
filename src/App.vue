@@ -75,6 +75,7 @@ html {
 
 .content-title {
   color: #984b43;
+  //color: #eac67a;
   font-weight: normal;
 }
 

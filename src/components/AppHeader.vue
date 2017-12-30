@@ -1,13 +1,14 @@
 <template>
   <div class="app-header-dummy">
     <div class="app-header container">
-      <header class="headerstyle">
-        <a href="#app-header-anchor-top">
+      <div class="headerstyle">
+        <a v-on:click="showOverflowMenu = false" href="#app-header-anchor-top">
           <h1 class="page-logo-small">m/p</h1>
           <h1 class="page-logo">markuspfundstein.com</h1>
         </a>
         <div class="overflow-menu-right">
-          <img class="overflow-menu-icon" src="../assets/overflow.png"/>
+          <img v-if="!showOverflowMenu" v-on:click="showOverflowMenu = !showOverflowMenu" class="overflow-menu-icon" src="../assets/overflow.png"/>
+          <img v-if="showOverflowMenu" v-on:click="showOverflowMenu = !showOverflowMenu" class="overflow-menu-icon" src="../assets/overflow-open.png"/>
         </div>
         <div class="links-right-side">
         <span>
@@ -17,9 +18,18 @@
           <a href="#contact">Contact</a>
         </span>
         </div>
-      </header>
-      
+      </div>
     </div>
+    <transition name="fade">
+      <div v-if="showOverflowMenu" class="overflow-menu">
+        <ul>
+          <li><a v-on:click="showOverflowMenu = false" href="#about-me">About</a></li>
+          <li><a v-on:click="showOverflowMenu = false" href="#projects">Projects</a></li>
+          <li><a v-on:click="showOverflowMenu = false" href="#digital-video">Services</a></li>
+          <li><a v-on:click="showOverflowMenu = false" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -28,6 +38,7 @@ export default {
   name: 'AppHeader',
   data() {
     return {
+      showOverflowMenu : false,
     };
   },
 };
@@ -49,6 +60,8 @@ export default {
 .app-header {
   z-index: 9999;
   height: 35px;
+  -moz-box-shadow: 0px 0px 1px #18121e;
+  -webkit-box-shadow: 0px 0px 1px #18121e;
   box-shadow: 0px 0px 1px #18121e;
   top: 0;
   width: 100%;
@@ -59,11 +72,13 @@ export default {
 ul {
   list-style-type: none;
   padding: 0;
+  text-align: center;
 }
 
 li {
-  display: inline-block;
-  margin: 0 10px;
+  margin-right: 21px;
+  margin-top: 25px;
+  margin-left: 21px;
 }
 
 a {
@@ -117,6 +132,18 @@ a:hover {
   }
 }
 
+.overflow-menu {
+  display: none;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
 @media (max-width:500px) {
   .links-right-side {
     display: none;
@@ -130,6 +157,19 @@ a:hover {
   .overflow-menu-right {
     display: inline;
     float: right;
+  }
+
+  .overflow-menu {
+    width: 100%;
+    position: fixed;
+    right: 0;
+    margin-top: 35px;
+    -moz-box-shadow: 0px 0.5px 0px #18121e;
+    -webkit-box-shadow: 0px 0.5px 0px #18121e;
+    box-shadow: 0px 0.5px 0px #18121e;
+    background-color: #eac67a;
+    z-index: 9999;
+    display: inline;
   }
 }
 
