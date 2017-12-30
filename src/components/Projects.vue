@@ -64,8 +64,7 @@ export default {
 
 .project-image-container {
   float: left;
-  width: 45%;
-}
+  width: 45%; }
 
 .project-text-container {
   margin-right: 25px;
@@ -79,6 +78,8 @@ export default {
   width: auto;
   height: auto;
   display: block;
+  box-shadow:0 1px 2px rgba(0,0,0,.4);
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,.4);
 }
 
 .project-right-side { 
@@ -90,7 +91,6 @@ export default {
   width: 100%;
   min-height: 300px;
   clear: both;
-  overflow: auto;
 }
 
 .project-text {
@@ -109,6 +109,15 @@ export default {
 
 
 @media (max-width: 800px) {
+
+  .project-image {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  .project-text-container {
+    margin-right: 0px;
+  }
 
   .project-image-container {
     float: left;

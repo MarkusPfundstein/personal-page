@@ -3,6 +3,7 @@
     <div class="app-header container">
       <header class="headerstyle">
         <h1 class="page-logo">markuspfundstein.com</h1>
+        <h1 class="page-logo-small">m/p</h1>
         <div class="links-right-side">
         <span>
           <a href="#about-me">About Me</a>
@@ -30,15 +31,6 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
-.links-right-side {
-  margin-top: 7px;
-  float: right;
-}
-
-.page-logo {
-  float: left;
-}
-
 .app-header-dummy {
   height: 35px;
 }
@@ -58,37 +50,65 @@ export default {
   background-color: #eac67a;
 }
 
-header {
-}
-
-a {
-  margin-right: 0.8rem;
-}
-
-h1, h2 {
-  font-weight: normal;
-  margin-top: 0.0;
-  margin-bottom: 0.0;
-}
-
-h1 {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-}
-
-h2 {
-  font-size: 1.0rem;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
   margin: 0 10px;
 }
+
 a {
   color: #233237;
+  text-decoration: none;
+  margin-right: 0.8rem;
 }
+
+a:hover {
+  color: #78879e;
+}
+
+.page-logo {
+  float: left;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: #233237;
+}
+
+.page-logo-small {
+  display: none;
+  float: left;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  color: #233237;
+
+}
+
+.links-right-side {
+  margin-top: 7px;
+  float: right;
+}
+
+@media (max-width:840px) {
+  .page-logo {
+    display: none;
+  }
+
+  .page-logo-small {
+    display: inline;
+  }
+  
+  .links-right-side {
+    display: none;
+  }
+}
+
 </style>

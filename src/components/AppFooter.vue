@@ -86,18 +86,26 @@ export default {
   float: left;
 }
 
-h1, h2 {
-  font-weight: normal;
+@media (max-width:555px) {
+  .app-footer {
+    padding-top: 3px;
+  }
+
+  .bottomtxt {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+  }
+
+  .iconsright {
+    width: 100%;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+  }
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>

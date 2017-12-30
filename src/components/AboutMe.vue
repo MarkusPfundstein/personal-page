@@ -1,7 +1,7 @@
 <template>
   <div id = "about-me" class="content container">
     <h1 class="content-title">About</h1> 
-    <div class="pull-right inline-image">
+    <div class="inline-image">
       <img class="img-responsive" alt="A picture of me at Triggi HQ" src="../assets/aboutme.jpeg">
       </img>
       <div class="caption-container">
@@ -56,22 +56,36 @@ export default {
   text-align:center
 }
 
-@media (max-width:768px) {
-  .img-left-inline {
-    float:left;
-    margin-right:0;
-    width:100%
-  }
-
-  .inline-image {
-    max-width:50%;
-    margin:15px 5px 5px
-  }
-}
-
 .inline-image-caption {
   font-size:0.8rem;
   padding:5px 0
 }
+
+.inline-image {
+  float: right;
+}
+
+@media (max-width:1100px) {
+  .img-responsive {
+    max-width:800px;
+    height:auto;
+    display:block;
+    box-shadow:0 1px 2px rgba(0,0,0,.4);
+    -webkit-box-shadow:0 1px 2px rgba(0,0,0,.4);
+    margin-right:0px;
+    margin-left: 0px;
+    width:100%
+  }
+
+  .inline-image {
+    float: none;
+    max-width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+}
+
+
 
 </style>
