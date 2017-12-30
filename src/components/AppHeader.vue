@@ -38,7 +38,7 @@ export default {
   name: 'AppHeader',
   data() {
     return {
-      showOverflowMenu : false,
+      showOverflowMenu: false,
     };
   },
 };

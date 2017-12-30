@@ -20,7 +20,7 @@
 <script>
 
 function jqueryScrollInit() {
-  $(document).on('click', 'a[href^="#"]', function (e) {
+  $(document).on('click', 'a[href^="#"]', function handleClick(e) {
     // target element id
     const id = $(this).attr('href');
 
