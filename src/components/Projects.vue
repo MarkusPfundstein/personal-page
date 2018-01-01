@@ -68,6 +68,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+a {
+  color: #984b43;
+}
+
+a:visited {
+  color: #984b43;
+}
+
 .project-image-container {
   float: left;
   width: 45%; }
@@ -86,6 +94,7 @@ export default {
   display: block;
   box-shadow:0 1px 2px rgba(0,0,0,.4);
   -webkit-box-shadow:0 1px 2px rgba(0,0,0,.4);
+  -moz-box-shadow:0 1px 2px rgba(0,0,0,.4);
 }
 
 .project-right-side { 
