@@ -10,12 +10,19 @@
     </div>
     <p> 
     I am Creative Technologist, often pitching myself as <b>the bridge
-      between developers and management</b>. As the owner of LIFE Electronics, a professional services firm in Amsterdam, I help companies to build novel software and solve complex business problems through digital means.</p>
+      between developers and management</b>. As the owner of LIFE Electronics, a professional services firm in Amsterdam, I help companies to build novel software and solve complex business problems through digital means. Feel free to download my <a href = "/static/MarkusPfundstein.pdf">resume</a>.</p> 
     <p> I started coding when I was 12  years or so. My first project was to run Ultima Online Freeshards from my basement on a 64k Modem. I think I had about 40 to 50 users and my dad a ridicolous internet bill (that was before we got flatrates). Coding ever since, from games to iOS apps to backend systems. As long as its fun and flashy and focuses on the user experience, I am on it. 
     </p>
     <p>
     Besides programming and designing software, I love people, cryptocurrencies, good books, series and animes, political discussions, history, philosophy, instant coffee (yeah), food, my family and nature. Politically I am some kind of weird chameleon. I believe in the nation-state but also in open trade and the free-market. I support Bitcoin and hope that it can help us to reach the second enlightment: The separation of state and money. I am always up for a good
     discussion, so if you are in Amsterdam, feel free to get in touch :-).
+    </p>
+    <h2 class = "content-subtitle">About this page</h2>
+    <p>
+    I developed this page in the winter holidays 2017-2018. It is going to be the main portal to my online presence. Right now there is not much content as its mostly a W-I-P. So maybe bookmark it and come back later ;-). 
+    </p>
+    <p>
+    The page is written with VueJS. All CSS is hand-coded and I tried to avoid Javascript as much as possible. I took great care to make the page performant and as responsive as possible. So if you find any bugs, please report them in the <a href = "https://github.com/MarkusPfundstein/personal-page" target="_blank">Github repo</a>.
     </p>
   </div>
 </template>
