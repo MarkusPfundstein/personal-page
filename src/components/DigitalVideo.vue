@@ -1,15 +1,19 @@
 <template>
   <div id="digital-video" class="content container">
     <h1 class="content-title">Services</h1>
-    <h2 class="content-subtitle">Digital Strategy</h2>
+    <h2 class="content-subtitle">Software Consultancy</h2>
+    <p>
+    As a Software Consultant, I can help you with all aspects related to software development. Be it experimental prototyping or realizing your startup idea. 
+    </p>
+    <p>Developing Software is my big talent. I love coding and always keep myself up to date with the newest technologies. I can write your software in JAVA-style OOP but also in functional Clojure or even Javascript (Fantasy-land hooray). I am always up to work with smart people. Especially challenging problems and working with smart and educated people is something that gives me great energy.  
+    </p>
+    <p>But I am not just your average coder and architect. My understanding of business and my ventures in entrepreneurship allow me to fulfil business roles as well. I am <b>your bridge between developers and management</b>. So if you have trouble to connect to your devs. Let me know and I can help you.
     <h3 class="content-sub-subtitle">Service Offering</h3>
     <ul>
-      <li></li>
-    </ul>
-    <h2 class="content-subtitle">Software Development</h2>
-    <h3 class="content-sub-subtitle">Service Offering</h3>
-    <ul>
-      <li></li>
+      <li>Development team mentorship & coaching</li>
+      <li>Digital Strategy (Online campaigns, Sales funnnels, Omni-channel user experiences)</li>
+      <li>Software Development (Fullstack, Devops)</li>
+      <li>Code Analysis & Evaluation</li>
     </ul>
     <h2 class="content-subtitle">Digital Video</h2>
     <p>

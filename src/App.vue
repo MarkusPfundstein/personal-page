@@ -24,8 +24,7 @@ function jqueryScrollInit() {
     // target element id
     const id = $(this).attr('href');
 
-    // target element
-    const $id = $(id);
+    // target element const $id = $(id);
     if ($id.length === 0) {
       return;
     }

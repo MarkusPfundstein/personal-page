@@ -2,6 +2,9 @@
   <div id="front" class="container">
     <div class="front-image-container">
       <img class="front-image" src="../assets/bigimage.jpg"/>
+      <h1 class="front-text-container">
+        "Good work - with passion and skill"
+      </h1>
     </div>
   </div>
 </template>
@@ -29,5 +32,26 @@ export default {
   width:auto;
 }
 
+.front-text-container {
+  z-index: 333;
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: #984b43;
+  font-style: italic;
+  font-size: 32px;
+}
+
+@media (max-width:850px) {
+  .front-text-container {
+    font-size: 20px;
+  }
+}
+
+@media (max-width:500px) {
+  .front-text-container {
+    font-size: 11px;
+  }
+}
 
 </style>
