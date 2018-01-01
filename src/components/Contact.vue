@@ -20,4 +20,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+a {
+  color: #984b43;
+}
+
+a:visited {
+  color: #984b43;
+}
 </style>
