@@ -21,6 +21,7 @@ Vue.component('projects', Projects);
 Vue.component('contact', Contact);
 Vue.component('front', Front);
 
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

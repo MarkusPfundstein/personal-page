@@ -46,6 +46,15 @@ export default {
 </script>
 
 <style>
+.redlink {
+  color: #984b43;
+}
+
+.redlink:visited {
+  color: #984b43;
+}
+
+
 
 .page-separator {
   height: 15px;
